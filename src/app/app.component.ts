@@ -28,10 +28,16 @@ export class AppComponent {
     this.inputType = 'text';
   }
   meuLog(){
-    console.log(this.inputText);
+    console.log('logou');
   }
   limpar(){
     this.inputText = ""
     this.inputType = ""
+  }
+// monitorar e capturar o valor digitado em um campo 
+// de entrada de texto (<input>) sempre que o usuário soltar uma tecla. 
+  handleInputKeyup(event: KeyboardEvent){
+    const textoAtual = (event.target as HTMLInputElement).value
+    console.log(textoAtual);
   }
 }

@@ -1,6 +1,11 @@
 <!-- Processo de Binding de um atributo para uma propriedade -->
 
-<input id="meu-input" [value]="inputText" [type]="inputType" [disabled]="isDisabled"/>
+<input 
+id="meu-input" 
+[value]="inputText" 
+[type]="inputType" 
+[disabled]="isDisabled"
+(keyup)="handleInputKeyup($event)"/>
 
 <br />
 
@@ -14,8 +19,11 @@
 
 <br />
 
-<button (click)="meuLog()">log</button>
-
 <button (click)="limpar()">limpar</button>
+<br />
+
+<button (click)="meuLog()">Logar</button>
+
+
 
 
