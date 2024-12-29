@@ -1,29 +1,6 @@
-<!-- Processo de Binding de um atributo para uma propriedade -->
+<button [attr.title]="buttonTitle">teste</button>
 
-<input 
-id="meu-input" 
-[value]="inputText" 
-[type]="inputType" 
-[disabled]="isDisabled"
-(keyup)="handleInputKeyup($event)"/>
+<button [attr.disabled]="buttonDisable ? false : null">Desabilitar</button>
 
-<br />
-
-<button (click)="enableInput()">Habilitar</button>
-<button (click)="disabledInput()">Desabilitar</button>
-
-<br />
-
-<button (click)="setSenha()">Senha</button>
-<button (click)="setTexto()">Texto</button>
-
-<br />
-
-<button (click)="limpar()">limpar</button>
-<br />
-
-<button (click)="meuLog()">Logar</button>
-
-
-
+<button (click)="onButonClick()">Alterar</button>
 
