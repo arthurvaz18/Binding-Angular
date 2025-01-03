@@ -1,6 +1,56 @@
-<button [attr.title]="buttonTitle">teste</button>
+<button
+[style.border-color]="'blue'"
+ style="width: 100px; background-color: black;" 
+ [style.color]="cor"
+ >1</button>
 
-<button [attr.disabled]="buttonDisable ? false : null">Desabilitar</button>
+<br />
 
-<button (click)="onButonClick()">Alterar</button>
+<button 
+[style.border-color]="'blue'"
+[style.width]="widthButton1"
+ [style.backgroundColor]="'black'" 
+ [style.color]="cor"
+ >2</button>
+
+<br />
+
+<button 
+[style.border-color]="'blue'"
+ [style.width]="widthButton2"
+  [style.backgroundColor]="'black'" 
+  [style.color]="cor">
+  3</button>
+
+<br />
+
+<button 
+[style.borderColor]="'blue'"
+[style.width]="widthButton3" 
+[style.backgroundColor]="'black '" 
+[style.color]="cor"
+>4</button>
+<br />
+
+<button 
+[style.border-color]="'blue'"
+[style]="{width: '100px' , backgroundColor: 'orange'}"
+>5</button>
+<br />
+
+<button [style]="stylesObj">6</button>
+<br />
+
+
+<button (click)="updateStyleObj()">Atualizar</button>
+
+<button (click)="updateStyleObjCorrect()">Atualizar OBJ</button>
+
+<button (click)="updateWidth()">Atualizar width</button>
+
+
+
+
+
+
 
