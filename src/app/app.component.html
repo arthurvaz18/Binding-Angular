@@ -1,52 +1,15 @@
-<button
-[style.border-color]="'blue'"
- style="width: 100px; background-color: black;" 
- [style.color]="cor"
- >1</button>
+  <div class="center">
+    <button  [class.red-button] ="botaoVermelho" (click)="botaoVerde = false;">vermelho</button>
+    <button [class.green-button]="true" (click)="botaoVerde = true;">verde</button>
+    <br />
 
-<br />
+    <button class="center" [class]="{
+      'red-button': !botaoVerde,
+      'green-button': botaoVerde,
 
-<button 
-[style.border-color]="'blue'"
-[style.width]="widthButton1"
- [style.backgroundColor]="'black'" 
- [style.color]="cor"
- >2</button>
+    }">Objeto</button>
+</div>
 
-<br />
-
-<button 
-[style.border-color]="'blue'"
- [style.width]="widthButton2"
-  [style.backgroundColor]="'black'" 
-  [style.color]="cor">
-  3</button>
-
-<br />
-
-<button 
-[style.borderColor]="'blue'"
-[style.width]="widthButton3" 
-[style.backgroundColor]="'black '" 
-[style.color]="cor"
->4</button>
-<br />
-
-<button 
-[style.border-color]="'blue'"
-[style]="{width: '100px' , backgroundColor: 'orange'}"
->5</button>
-<br />
-
-<button [style]="stylesObj">6</button>
-<br />
-
-
-<button (click)="updateStyleObj()">Atualizar</button>
-
-<button (click)="updateStyleObjCorrect()">Atualizar OBJ</button>
-
-<button (click)="updateWidth()">Atualizar width</button>
 
 
 
