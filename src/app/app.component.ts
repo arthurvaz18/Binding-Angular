@@ -12,40 +12,17 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-minhaProp =true;
-pessoa: any ={
-  status:1,
-  name: undefined,
-}
+  selecionaPessoaIndex: number | undefined;
 
-toggleProp(){
-  this.minhaProp = !this.minhaProp;
-}
-istruthy(){
-  //return {};
-  //return [];
-  //return true;
-  //return 1;
-  //return "teste";
-  //return 'teste';
-  //return "0";
-  //return "false";
-  //return "this.pessoa.status";
-  
-}
+    listaPessoas = [
+      {nome: 'Arthur Fernandes Vaz', idade: 24,},
+      {nome: 'Alefe Fernandes Vaz', idade: 27,},
+      {nome: 'Claudelino Fernandes Vaz', idade: 50,},
+      {nome: 'Aniltamar Fernandes Vaz', idade: 53,},
+    ];
 
-isfalse(){
-  //return false;
-  //return 0;
-  //return "";
-  //return '';
-  //return null;
-  //return "teste";
-  //return undefined;
-  //return "-0";
-  //return NaN;
-  //return this.pessoa.name;
-  
-}
-
+    selecionaPessoa(index: number){
+      console.log(index);
+      this.selecionaPessoaIndex = index;
+    }
   }

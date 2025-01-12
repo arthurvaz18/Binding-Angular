@@ -1,19 +1,26 @@
-.red-button {
-    background-color: red;
-    color: white;
-
+.list{
+    background-color: black;
+    padding: 3px;
 }
-.green-button {
-    background-color: green;
-    color: white;
-}
-.center{
-    text-align: center;
-    margin: 4px;
-}
-.corPai{
-    color: red;
-}
-.corFilho{
-    color: blue;
+.item{
+    background-color: beige;
+    padding: 3px;
+    cursor: pointer;
+    
+    &__nome{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    &__idade{
+        font-size: 20px;
+        font-weight: 300; 
+    }
+    &--odd{
+background-color: gray;
+    }
+    &--highlighted{
+        color: white;
+        background-color: green;
+        border: 3px solid greenyellow;
+    }
 }
