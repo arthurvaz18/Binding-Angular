@@ -1,21 +1,9 @@
-  <div class="center">
-    <h1 class="corPai">Componente Pai</h1>    
-    <button class="corPai" 
-    (click)="getInformacao()">Enviar Informação para o Pai
-  </button>
- <h3 class="corFilho" > {{ InformacaoDoFilho }} </h3>
-    <app-app-filho
-     [recebeInformacaoDoPai]="informacao"
-     (enviaInformacaoParaOPai)="recebendoInformacaoDoFilho($event)">
-     
-    </app-app-filho>
+<h1>Nome:</h1>
+    <input type="text" [(ngModel)]="name" />
 
-</div>
+<h1>Nome digitado: {{ name }}</h1>
 
-
-
-
-
-
-
-
+<!--
+[ngModel]="name" <-- Input
+(ngModelChange)="manipulando()" <-- Output
+-->
