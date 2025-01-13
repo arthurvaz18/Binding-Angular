@@ -13,17 +13,13 @@ import { PessoaComponent } from './pessoa/pessoa.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  personSelectedIndex: number | undefined;
+  isGreen: boolean = true;
 
-    listPeople = [
-      {name: 'Arthur Fernandes Vaz', age: 24,},
-      {name: 'Alefe Fernandes Vaz', age: 27,},
-      {name: 'Claudelino Fernandes Vaz', age: 50,},
-      {name: 'Aniltamar Fernandes Vaz', age: 53,},
-    ];
-
-   selectPerson(index: number){
-      console.log(index);
-      this.personSelectedIndex = index;
-    }
+  setToGreen(){
+    this.isGreen = true;
   }
+
+  setToOrange(){
+    this.isGreen = false;
+  }
+}
